@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Logo from "./assets/madecalogo.png";
+import {
+  AppContainer,
+  ModalContentContainer,
+  ModalHeaderText,
+  ModalBodyText,
+  ModalLink,
+  ModalPrimaryButton,
+  ModalSecondaryButton,
+  BrandLogo,
+  Footer,
+  FooterText,
+} from "./App.styled";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <BrandLogo src={Logo} />
+      <ModalContentContainer>
+        <ModalHeaderText>Choose your Country/Region</ModalHeaderText>
+        <ModalBodyText>You are visiting madecaderma.com.</ModalBodyText>
+        <ModalBodyText>
+          Would you like to update your localization?
+        </ModalBodyText>
+        <ModalPrimaryButton>US & Canada</ModalPrimaryButton>
+        <ModalSecondaryButton>International / EN</ModalSecondaryButton>
+        <ModalLink>Choose another country / region</ModalLink>
+      </ModalContentContainer>
+      <Footer>
+        <FooterText>Madeca Copyright Goes Here</FooterText>
+      </Footer>
+    </AppContainer>
   );
 }
 

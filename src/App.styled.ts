@@ -48,8 +48,8 @@ export const ModalPrimaryButton = styled.a`
   padding: 20px 80px;
   border: none;
   border-radius: 0.8rem;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #333333;
   font-weight: 600;
   width: 190px;
   margin-top: 50px;
@@ -60,16 +60,16 @@ export const ModalPrimaryButton = styled.a`
   text-decoration: none;
 
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
 `;
 export const ModalSecondaryButton = styled.a`
   padding: 20px 80px;
   border: none;
   border-radius: 0.8rem;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #333333;
   font-weight: 600;
   width: 190px;
   margin-top: 20px;
@@ -80,8 +80,8 @@ export const ModalSecondaryButton = styled.a`
   text-decoration: none;
 
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
 `;
 export const BrandLogo = styled.img`
